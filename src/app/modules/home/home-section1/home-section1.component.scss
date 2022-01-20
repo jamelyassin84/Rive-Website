@@ -1,0 +1,110 @@
+.landing-image {
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+.page {
+	background: #f8f8f8;
+}
+
+.overlay {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	animation: overlay 15s ease-in-out infinite;
+	transition: 2s ease-in-out;
+	background: linear-gradient(
+		95deg,
+		rgba(0, 0, 0, 0.8),
+		black,
+		black,
+		black,
+		rgba(30, 116, 230, 0.5),
+		rgba(230, 230, 230, 0.5),
+		transparent
+	);
+}
+.container {
+	position: relative;
+	z-index: 3;
+}
+
+.headline {
+	font-size: 5.3rem;
+	font-weight: 700;
+	margin-top: 18vh;
+}
+
+p {
+	font-size: 2rem;
+}
+
+.rive-btn {
+	background: linear-gradient(
+		111.54deg,
+		#2e70e6 -5.45%,
+		#2594d2 54.6%,
+		#1db3c1 82.64%
+	);
+	border-radius: 9999px;
+	padding-bottom: 0.75rem;
+	padding-top: 0.75rem;
+	min-width: 150px;
+	font-weight: 900;
+	border: none;
+	cursor: pointer;
+	padding-left: 30px;
+	padding-right: 30px;
+	i {
+		transition: 0.1s ease-in-out;
+	}
+	&:hover {
+		box-shadow: 0px 0px 55px #2e70e6;
+		i {
+			transform: translateX(5px);
+		}
+	}
+	&:active {
+		transform: scale(0.99);
+	}
+}
+
+.sales-btn {
+	padding-bottom: 0.75rem;
+	padding-top: 0.75rem;
+	font-weight: 900;
+	border-radius: 9999px;
+	color: #101820;
+	min-width: 150px;
+	cursor: pointer;
+	padding-left: 30px;
+	padding-right: 30px;
+	transition: 0.3s ease-in-out;
+	i {
+		transition: 0.1s ease-in-out;
+	}
+	&:hover {
+		box-shadow: 0px 0px 15px white;
+		i {
+			transform: translateX(5px);
+		}
+	}
+	&:active {
+		transform: scale(0.99);
+	}
+}
+
+@keyframes overlay {
+	0% {
+		filter: hue-rotate(1deg);
+	}
+	100% {
+		filter: hue-rotate(360deg);
+	}
+}

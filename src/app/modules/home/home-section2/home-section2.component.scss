@@ -1,0 +1,69 @@
+.container {
+	position: relative;
+	z-index: 3;
+}
+
+.page {
+	background: #f8f8f8;
+	margin-top: 20vh;
+}
+.overlay {
+	position: absolute;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	margin-left: 15vw;
+	i {
+		font-size: 25rem;
+		color: white;
+	}
+}
+.headline {
+	font-size: 5.3rem;
+	font-weight: 700;
+	margin-top: 18vh;
+	line-height: 5rem;
+}
+
+p {
+	font-size: 2rem;
+}
+
+.rive-btn {
+	background: linear-gradient(
+		111.54deg,
+		#2e70e6 -5.45%,
+		#2594d2 54.6%,
+		#1db3c1 82.64%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-color: black;
+	border-radius: 9999px;
+	padding-bottom: 0.75rem;
+	padding-top: 0.75rem;
+	min-width: 150px;
+	font-weight: 900;
+	border: none;
+	cursor: pointer;
+	padding-left: 30px;
+	padding-right: 30px;
+
+	i {
+		transition: 0.1s ease-in-out;
+	}
+	&:hover {
+	}
+	&:active {
+		transform: scale(0.99);
+	}
+}
+
+img {
+	margin-left: 10vw;
+	margin-top: -10vh;
+	object-fit: contain;
+	border-radius: 10px;
+	height: 100%;
+	transform: translate(20vh);
+}

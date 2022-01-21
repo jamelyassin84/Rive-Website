@@ -3,8 +3,11 @@
 	width: 100vw;
 	position: absolute;
 	top: 0;
+	object-fit: stretch;
 	left: 0;
 	z-index: 0;
+	filter: grayscale(70%);
+	animation: overlay 18s ease-in-out infinite;
 }
 
 .overlay {
@@ -18,12 +21,11 @@
 	background: linear-gradient(
 		-195deg,
 		black,
-		#162738,
-		#162738,
-		#162738,
-		#1e74e680,
-		rgba($color: #1db3c1, $alpha: 0.2),
-		rgba(0, 0, 0, 0.5),
+		black,
+		rgba($color: black, $alpha: 0.5),
+		rgba($color: black, $alpha: 0.4),
+		rgba($color: black, $alpha: 0.2),
+		black,
 		transparent
 	);
 }
@@ -40,6 +42,7 @@
 
 p {
 	font-size: 2rem;
+	font-weight: 500;
 }
 
 .rive-btn {
@@ -102,7 +105,7 @@ p {
 		transform: scale(1);
 	}
 	50% {
-		transform: scale(3.3);
+		transform: scale(1.7);
 	}
 	100% {
 		transform: scale(1);

@@ -1,3 +1,4 @@
+import { MarketPlaceTabComponent } from './components/market-place-tab/market-place-tab.component'
 import { WhoWeServeComponent } from './modules/who-we-serve/who-we-serve/who-we-serve.component'
 import { TermsAndConditionsComponent } from './modules/terms-and-conditions/terms-and-conditions/terms-and-conditions.component'
 import { PrivacyAndPolicyComponent } from './modules/privacy-and-policy/privacy-and-policy/privacy-and-policy.component'
@@ -17,6 +18,7 @@ const routes: Routes = [
 		path: 'home',
 		component: HomeComponent,
 	},
+
 	{
 		path: 'features',
 		component: FeaturesComponent,
@@ -28,6 +30,10 @@ const routes: Routes = [
 	{
 		path: 'privacy-and-policy',
 		component: PrivacyAndPolicyComponent,
+	},
+	{
+		path: 'market-place',
+		component: MarketPlaceTabComponent,
 	},
 	{
 		path: 'terms-and-conditions',

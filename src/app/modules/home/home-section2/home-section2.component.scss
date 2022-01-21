@@ -10,7 +10,7 @@
 	justify-content: center;
 	margin-left: 15vw;
 	i {
-		font-size: 25rem;
+		font-size: 35rem;
 		color: white;
 	}
 }
@@ -54,14 +54,70 @@ p {
 		transform: scale(0.99);
 	}
 }
+.chat {
+	display: flex;
+	width: 100%;
+	margin-left: 20vw;
+	flex-direction: column;
+	margin-top: 20vh;
+	align-content: center;
+	justify-content: center;
+	.chat-container {
+	}
 
-img {
-	margin-left: 10vw;
-	margin-top: -10vh;
-	object-fit: contain;
-	border-radius: 10px;
-	height: 100%;
-	transform: translate(20vh);
+	.reply-container {
+		margin-left: -20vh;
+		.chat-message {
+			border-radius: 30px;
+			margin-top: 20px;
+		}
+		.shop-icon {
+			margin-top: 20px;
+		}
+	}
+}
+.chat-link {
+	margin-top: 2rem;
+	p {
+		font-size: 1rem;
+		text-decoration: underline;
+	}
+}
+.chat-card {
+	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+	padding: 20px;
+	background: white;
+	margin-bottom: 1rem;
+	border-radius: 30px;
+	transform: translate(-70px);
+	border-top-right-radius: 0;
+}
+.chat-image {
+	img {
+		height: 65px;
+		object-fit: contain;
+	}
+}
+.chat-message {
+	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+	background: white;
+	margin-bottom: 1rem;
+	padding: 1rem;
+	border-radius: 30px;
+	border-bottom-right-radius: 0;
+}
+
+.shop-icon {
+	img {
+		width: 47px;
+		height: 47px;
+		border-radius: 50%;
+		object-fit: contain;
+		padding: 5px;
+		margin-left: 1rem;
+		background: white;
+		box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+	}
 }
 
 @media only screen and (max-width: 600px) {

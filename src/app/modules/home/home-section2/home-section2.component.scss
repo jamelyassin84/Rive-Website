@@ -63,3 +63,36 @@ img {
 	height: 100%;
 	transform: translate(20vh);
 }
+
+@media only screen and (max-width: 600px) {
+	.headline {
+		font-size: 36px;
+		margin-top: 40px;
+		text-align: center;
+		line-height: 36px;
+		margin-bottom: -40px !important;
+	}
+	p {
+		font-size: 16px;
+		width: 100%;
+		opacity: 0.5;
+		padding: 40px;
+		text-align: center;
+	}
+	.landing-image {
+		object-fit: cover;
+	}
+	.btn-container {
+		flex-direction: column;
+		padding: 40px;
+		margin-top: -5rem !important;
+	}
+	button {
+		font-size: 16px !important;
+		padding: 7px 20px !important;
+		margin-bottom: 20px;
+	}
+	.page {
+		height: 60vh;
+	}
+}

@@ -6,7 +6,7 @@
 	object-fit: stretch;
 	left: 0;
 	z-index: 0;
-	filter: grayscale(70%);
+	filter: grayscale(10%) hue-rotate(-20deg);
 	animation: overlay 18s ease-in-out infinite;
 }
 
@@ -22,9 +22,9 @@
 		-195deg,
 		black,
 		black,
-		rgba($color: black, $alpha: 0.5),
+		rgba($color: black, $alpha: 0.9),
 		rgba($color: black, $alpha: 0.4),
-		rgba($color: black, $alpha: 0.2),
+		rgba($color: black, $alpha: 0.7),
 		black,
 		transparent
 	);
@@ -45,6 +45,9 @@ p {
 	font-weight: 500;
 }
 
+button {
+	font-size: 1.3rem;
+}
 .rive-btn {
 	background: linear-gradient(
 		111.54deg,
@@ -109,5 +112,36 @@ p {
 	}
 	100% {
 		transform: scale(1);
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.headline {
+		font-size: 36px;
+		margin-top: 40px;
+		text-align: center;
+	}
+	p {
+		font-size: 16px;
+		width: 100%;
+		opacity: 0.5;
+		padding: 40px;
+		text-align: center;
+	}
+	.landing-image {
+		object-fit: cover;
+	}
+	.btn-container {
+		flex-direction: column;
+		padding: 40px;
+		margin-top: -5rem !important;
+	}
+	button {
+		font-size: 16px !important;
+		padding: 7px 20px !important;
+		margin-bottom: 20px;
+	}
+	.page {
+		height: 100vh;
 	}
 }

@@ -1,0 +1,56 @@
+.nav {
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+	z-index: 3;
+	top: 0;
+	background: black;
+	width: 100%;
+	top: 0;
+}
+
+.fixed {
+	position: fixed;
+}
+.logo {
+	height: 50px;
+	object-fit: contain;
+	cursor: pointer;
+}
+
+.right {
+	.links {
+		margin-right: 3rem;
+		min-width: 150px;
+		font-weight: 700;
+		cursor: pointer;
+		transition: 0.2s ease;
+		color: white;
+		&:hover {
+			opacity: 0.5;
+		}
+	}
+	.get-started {
+		border-radius: 30px;
+		padding: 10px 30px;
+		color: white !important;
+		cursor: pointer;
+		font-weight: 900;
+		background: linear-gradient(
+			111.54deg,
+			#2e70e6 -5.45%,
+			#2594d2 54.6%,
+			#1db3c1 82.64%
+		);
+
+		transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+		&:hover {
+			background: hsla(0, 0%, 100%, 0.2);
+		}
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.right {
+		display: none;
+	}
+}

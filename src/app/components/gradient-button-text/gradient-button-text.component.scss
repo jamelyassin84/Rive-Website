@@ -1,0 +1,48 @@
+button {
+	&:hover {
+		i {
+			transform: translateX(5px);
+		}
+	}
+	position: relative;
+	font-size: 1.3rem;
+	background: linear-gradient(
+		111.54deg,
+		#2e70e6 -5.45%,
+		#2594d2 54.6%,
+		#1db3c1 82.64%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	padding-bottom: 0.75rem;
+	padding-top: 0.75rem;
+	min-width: 150px;
+	color: white;
+	font-weight: 900;
+	border: none;
+	cursor: pointer;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 9999px;
+
+	&:hover::after {
+		background: rgba($color: #000000, $alpha: 0.7);
+		color: white;
+	}
+
+	&:active {
+		transform: scale(0.99);
+	}
+}
+
+button:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: black;
+	z-index: -1;
+	border-radius: 9999px;
+}
